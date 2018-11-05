@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>USA</title>
+	<meta name="viewport" content=" width= device-width, intitial-scale=1" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+
+
+</head>
+<body>
+	<div id="page">
+		<header>
+		<div id="menuhaut">
+			<ul>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Nous contacter</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a id="smobile" href="#">Site mobile</a></li>
+		        <li><a id="espace1" href="#">&gt;&gt; Espace client</a></li>
+			</ul>
+		</div>
+		
+		<div id="logo">
+			<a href="index.html"><img src="images-travel/logo-travel.jpg" alt=""></a>
+		</div>
+
+
+
+
+		<nav id="menuprincipal">
+			
+		<label for="menu-mobile" class="menu-mobile">Menu</label>
+		<input type="checkbox" id="menu-mobile"
+		role="button"> 
+
+
+			<ul>
+				<li><a href="index.html">ACCUEIL</a></li>
+<!--============= MENU DEROULANT =============-->	
+				<li>
+					<a href="usa.html" class="choix">USA</a>
+				
+				<ul class="sousmenu">
+
+					<li><a href="australie.html">Australie</a></li>
+					<li><a href="polynesie.html">Polynesie</a></li>
+					<li><a href="croisieres.html">Croisieres</a></li>
+					<li><a href="discount.html">Vols & Séjour discount</a></li>
+					<li><a href="sejoursdereve.html">Vols & Séjour de rêve</a></li>
+				</ul>
+				</li>
+<!--========== FIN MENU DEROULANT ======= -->
+				<li><a href="vols.html">VOLS</a></li>
+				<li><a href="sejours.html">SEJOURS</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		</header>
+		<main>
+
+
+	
+
+<!--=============   SLIDER NIVO SLIDER =============== -->
+
+
+        <div class="slider-wrapper theme-default">
+         <div id="slider" class="nivoSlider">
+		<img src="images-travel/usa/ny.jpeg" title="#htmlcaption"  alt="photo1">
+		<img src="images-travel/usa/city.jpeg" title="#htmlcaption" alt="photo2">
+		<img src="images-travel/usa/pont.jpg" title="#htmlcaption" >
+		<img src="images-travel/usa/pont.jpg" title="#htmlcaption" >
+	    </div>
+
+	   <div id="htmlcaption" class="nivo-html-caption">
+                <p id="titreslide2" style="font-size:45px";>Les Etats Unis</p>
+        </div>
+			
+<!-- SECTION ARTICLES-->
+		  <section id="promo">
+
+			<article class="articles">
+				<h2>Sejour Country</h2>
+				<img src="images-travel/usa/country.jpg" alt="ponton">
+				<p>Découvrez les séjours country by TRAVEL pour perfectionner votre technique et pratiquer la danse country, le madison... dans les meilleures conditions.</p>
+				<a href="#">Lire la suite</a>
+			</article>
+
+			<article class="articles">
+				<h2>Visite du grand Canyon</h2>
+				<img src="images-travel/usa/canyon.jpg" alt="ponton">
+				<p>Le Grand Canyon du Colorado est certainement le parc le plus connu et le plus extraordinaire des USA. C'est en tout cas le parc le plus visité de l'Ouest ...</p>
+				<a href="#">Lire la suite</a>
+			</article>
+
+			<article class="articles">
+				<h2>Sejours à Las Vegas</h2>
+				<img src="images-travel/usa/lasvegas.jpeg" alt="ponton">
+				<p>Découvrez la ville qui ne dort jamais lors de votre week-end à Las Vegas. Au programme : casino, machines à sous et spectacles vos attendent pour un séjour ...</p>
+				<a href="#">Lire la suite</a>
+			</article>
+
+			<article class="articles">
+				<h2>Route 66</h2>
+				<img src="images-travel/usa/66.jpg" alt="ponton">
+				<p>Cet autotour sur la Route 66 aux USA vous fera traverser pas moins de huit états emblématiques, à la découverte de paysages grandioses et d'une grande ... </p>
+				<a href="#">Lire la suite</a>
+				
+			</article>
+
+		
+		</section>
+
+
+		</main>
+	<div class="reseaux">
+			<p>Nous suivre</p>
+			<a href="#"><img src="images-travel/facebook.jpg" alt="facebook" />
+			</a>
+                   <a href="#"><img src="images-travel/twitter.jpg" alt="twitter" />
+                   </a>
+			
+		</div>
+
+
+	</div>
+
+	<footer id="bas">
+		
+		<div id="menubas">
+			
+				<p>@2017-Tous droits réservés</p>
+				<p>Infos légales</p>
+			
+		</div>
+			
+			
+		</footer>
+		
+		<div id="menubas">
+			
+				<p>@2017-Tous droits réservés</p>
+				<p>Infos légales</p>
+			
+		</div>
+			
+			
+</footer>
+</div>
+
+<script src="scripts/jquery-1.9.0.min.js"></script>
+    <script src="scripts/jquery.nivo.slider.js"></script>
+    <script>
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+        	controlNav: false
+        })
+    });
+    </script>
+</body>
+</html>

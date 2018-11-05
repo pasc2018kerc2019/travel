@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Espagne</title>
+	<meta name="viewport" content=" width= device-width, intitial-scale=1" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+
+
+</head>
+<body>
+	<div id="page">
+		<header>
+		<div id="menuhaut">
+			<ul>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Nous contacter</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a id="smobile" href="#">Site mobile</a></li>
+		        <li><a id="espace1" href="#">&gt;&gt; Espace client</a></li>
+			</ul>
+		</div>
+		
+		<div id="logo">
+			<a href="index.html"><img src="images-travel/logo-travel.jpg" alt=""></a>
+		</div>
+
+
+
+
+		<nav id="menuprincipal">
+			
+		<label for="menu-mobile" class="menu-mobile">Menu</label>
+		<input type="checkbox" id="menu-mobile"
+		role="button"> 
+
+
+			<ul>
+				<li><a href="index.html">ACCUEIL</a></li>
+<!--============= MENU DEROULANT =============-->	
+				<li>
+					<a href="espagne.html" class="choix">ESPAGNE</a>
+				
+				<ul class="sousmenu">
+					<li><a href="maroc.html">Maroc</a></li>
+					<li><a href="est.html">Roumanie</a></li>
+					<li><a href="insolite.html">Insolite</a></li>
+					<li><a href="discount.html">Vols & Séjours discount</a></li>
+					<li><a href="sejoursdereve.html">Vols & Séjours de rêve</a></li>
+				</ul>
+				</li>
+<!--========== FIN MENU DEROULANT ======= -->
+				<li><a href="vols.html">VOLS</a></li>
+				<li><a href="sejours.html">SEJOURS</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		</header>
+		<main>
+
+<main id="sdiscount">
+	
+
+<!--=============   SLIDER NIVO SLIDER =============== -->
+
+
+        <div class="slider-wrapper theme-default">
+         <div id="slider" class="nivoSlider">
+		<img src="images-travel/espagne/esp-slider1.jpeg" title="#htmlcaption"  alt="photo1">
+		<img src="images-travel/espagne/esp-slider2.jpg" title="#htmlcaption" alt="photo2">
+		<img src="images-travel/espagne/esp-slider3.jpg" title="#htmlcaption" >
+		<img src="images-travel/espagne/esp-slider4.jpg" title="#htmlcaption" >
+	    </div>
+
+	   <div id="htmlcaption" class="nivo-html-caption">
+                <p id="titreslide" style="font-size:50px"; >L'ESPAGNE</p>
+        </div>
+			
+<section id="discount">
+		
+			<article class="lieu">
+				<img src="images-travel/espagne/asturia.PNG" alt="">
+				<a href="#"><h3>Asturia</h3></a>
+				<p>La Principauté des Asturies est une région du nord-ouest de l'Espagne. </p>
+				
+			</article>
+
+			<article class="lieu">
+				<img src="images-travel/espagne/baleares.jpg" alt="">
+				<a href="#"><h3>Baleares</h3></a>
+				<p>Les îles Baléares forment un archipel situé au large de la côte est de l'Espagne, en Méditerranée. </p>
+				
+			</article>
+
+			<article class="lieu">
+				<img src="images-travel/espagne/catalogne.jpg" alt="">
+				<a href="#"><h3>Catalogne</h3></a>
+				<p>Au nord-est de l'Espagne, la région de la Catalogne est connue pour ses stations balnéaires... </p>
+				
+			</article>
+
+			<article class="lieu">
+				<img src="images-travel/espagne/Costabrava.jpg" alt="">
+				<a href="#"><h3>Costa Brava</h3></a>
+				<p>La Costa Brava est le nom donné à la côte catalane sur la mer Méditerranée ...  </p>
+				
+			</article>
+
+			<article class="lieu">
+				<img src="images-travel/espagne/galicia.jpg" alt="">
+				<a href="#"><h3>Galicia</h3></a>
+				<p>La Galice, communauté autonome située au nord-ouest de l'Espagne, est une région verdoyante...</p>
+				
+			</article>
+			
+			<article class="lieu">
+				<img src="images-travel/espagne/malaga.jpg" alt="">
+				<a href="#"><h3>Malaga</h3></a>
+				<p>Malaga est une ville portuaire située sur la Costa del Sol, au sud de l'Espagne 
+				</p>
+			</article>
+
+
+</section>
+	
+	</main>
+	<div class="reseaux">
+			<p>Nous suivre</p>
+			<a href="#"><img src="images-travel/facebook.jpg" alt="facebook" />
+			</a>
+                   <a href="#"><img src="images-travel/twitter.jpg" alt="twitter" />
+                   </a>
+			
+		</div>
+
+
+	</div>
+
+	<footer id="bas">
+		
+		<div id="menubas">
+			
+				<p>@2017-Tous droits réservés</p>
+				<p>Infos légales</p>
+			
+		</div>
+			
+			
+		</footer>
+</div>
+
+<script src="scripts/jquery-1.9.0.min.js"></script>
+    <script src="scripts/jquery.nivo.slider.js"></script>
+    <script>
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+        	controlNav: false
+        })
+    });
+    </script>
+</body>
+</html>

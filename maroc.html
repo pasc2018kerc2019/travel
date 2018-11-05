@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Maroc</title>
+	<meta name="viewport" content=" width= device-width, intitial-scale=1" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+
+
+</head>
+<body>
+	<div id="page">
+		<header>
+		<div id="menuhaut">
+			<ul>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Nous contacter</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a id="smobile" href="#">Site mobile</a></li>
+		        <li><a id="espace1" href="#">&gt;&gt; Espace client</a></li>
+			</ul>
+		</div>
+		
+		<div id="logo">
+			<a href="index.html"><img src="images-travel/logo-travel.jpg" alt=""></a>
+		</div>
+
+
+
+
+		<nav id="menuprincipal">
+			
+		<label for="menu-mobile" class="menu-mobile">Menu</label>
+		<input type="checkbox" id="menu-mobile"
+		role="button"> 
+
+
+			<ul>
+				<li><a href="index.html">ACCUEIL</a></li>
+<!--============= MENU DEROULANT =============-->	
+				<li>
+					<a href="maroc.html" class="choix">MAROC</a>
+				
+				<ul class="sousmenu">
+					<li><a href="espagne.html">Espagne</a></li>
+					<li><a href="est.html">Roumanie</a></li>
+					<li><a href="insolite.html">Insolite</a></li>
+					<li><a href="discount.html">Vols & Séjours discount</a></li>
+					<li><a href="sejoursdereve.html">Vols & Séjours de rêve</a></li>
+				</ul>
+				</li>
+<!--========== FIN MENU DEROULANT ======= -->
+				<li><a href="vols.html">VOLS</a></li>
+				<li><a href="sejours.html">SEJOURS</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		</header>
+		<main>
+
+<main id="sdiscount">
+	
+
+<!--=============   SLIDER NIVO SLIDER =============== -->
+
+
+        <div class="slider-wrapper theme-default">
+         <div id="slider" class="nivoSlider">
+		<img src="images-travel/maroc/maroc1.jpg" title="#htmlcaption"  alt="photo1">
+		<img src="images-travel/maroc/maroc2.jpg" title="#htmlcaption" alt="photo2">
+		<img src="images-travel/maroc/maroc3.jpg" title="#htmlcaption" >
+		<img src="images-travel/maroc/place.jpg" title="#htmlcaption" >
+	    </div>
+
+	   <div id="htmlcaption" class="nivo-html-caption">
+                <p id="titreslide" style="font-size:50px"; >LE MAROC</p>
+        </div>
+			
+<section id="discount">
+		
+			<article class="lieu">
+				<img src="images-travel/maroc/tanger.jpg" alt="">
+				<a href="#"><h3>Tanger</h3></a>
+				<p>Port marocain situé dans le détroit de Gibraltar ... </p>
+				
+			</article>
+
+			<article class="lieu">
+				<img src="images-travel/maroc/oujda.jpg" alt="">
+				<a href="#"><h3>Oujda</h3></a>
+				<p>Oujda est une ville au nord-est du Maroc, à proximité de la frontière algérienne... </p>
+				
+			</article>
+
+			<article class="lieu">
+				<img src="images-travel/maroc/monastir.jpg" alt="">
+				<a href="#"><h3>Agadir</h3></a>
+				<p>Agadir, ville située sur la côte atlantique sud du Maroc dans les contreforts de l'Anti-Atlas,... </p>
+				
+			</article>
+
+			<article class="lieu">
+				<img src="images-travel/maroc/Marrakech.jpg" alt="">
+				<a href="#"><h3>Marrakech</h3></a>
+				<p>Marrakech, ancienne cité impériale de l'ouest du Maroc, et un centre économique majeur...  </p>
+				
+			</article>
+
+			<article class="lieu">
+				<img src="images-travel/maroc/fes.jpg" alt="">
+				<a href="#"><h3>Fès</h3></a>
+				<p>Fès est une ville du nord-est du Maroc souvent considérée comme la capitale culturelle du pays...</p>
+				
+			</article>
+			
+			<article class="lieu">
+				<img src="images-travel/maroc/essaouira.jpg" alt="">
+				<a href="#"><h3>Essaouira</h3></a>
+				<p>Essaouira est une ville portuaire et touristique située sur la côte atlantique du Maroc...
+				</p>
+			</article>
+
+
+</section>
+	
+	
+		
+
+</div>
+
+
+
+
+
+
+
+</main>
+	<div class="reseaux">
+			<p>Nous suivre</p>
+			<a href="#"><img src="images-travel/facebook.jpg" alt="facebook" />
+			</a>
+                   <a href="#"><img src="images-travel/twitter.jpg" alt="twitter" />
+                   </a>
+			
+		</div>
+
+
+	</div>
+
+	<footer id="bas">
+		
+		<div id="menubas">
+			
+				<p>@2017-Tous droits réservés</p>
+				<p>Infos légales</p>
+			
+		</div>
+			
+			
+		</footer>
+
+</div>
+
+<script src="scripts/jquery-1.9.0.min.js"></script>
+    <script src="scripts/jquery.nivo.slider.js"></script>
+    <script>
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+        	controlNav: false
+        })
+    });
+    </script>
+</body>
+</html>

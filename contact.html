@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Travel</title>
+	<meta name="viewport" content=" width= device-width, intitial-scale=1" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="page">
+	<header>
+		<div id="menuhaut">
+			<ul>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Nous contacter</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a id="smobile" href="#">Site mobile</a></li>
+		        <li><a id="espace1" href="#">&gt;&gt; Espace client</a></li>
+			</ul>
+		</div>
+		
+		<div id="logo">
+			<a href="index.html"><img src="images-travel/logo-travel.jpg" alt=""></a>
+		</div>
+<!--============= MENU DEROULANT =============-->	
+
+
+		<nav id="menuprincipal">
+			
+		<label for="menu-mobile" class="menu-mobile">Menu</label>
+		<input type="checkbox" id="menu-mobile"
+		role="button"> 
+
+
+			<ul>
+				<li><a href="index.html">ACCUEIL</a></li>
+
+
+
+
+
+				<li>
+					<a href="discount.html" >VOLS & SEJOURS</a>
+				
+				<ul class="sousmenu">
+					<li><a href="discount.html">Vols & Séjours Discount</a></li>
+					<li><a href="sejoursdereve.html">Vol & Séjours De Rêve</a></li>
+				</ul>
+				</li>
+
+
+
+<!--========== FIN MENU DEROULANT ======= -->
+
+
+				<li><a href="vols.html">VOLS</a></li>
+				<li><a href="sejours.html" >SEJOURS</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a href="contact.html" class="choix">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+<!-- ===============FORMULAIRE====================== -->
+
+
+<main id="contenuformulaire">
+			
+
+			<div id="nous">
+				<div id="notreadresse">
+					<h4 class="titreh4">Nos coordonnées</h4>
+					
+				<address>
+					Travel and Pleasure<br />
+					17 bis av Amiral Courbet<br />
+					56000 Lorient<br />
+					France <br />
+					Telephone : 02 97 15 15 15
+				</address>
+		   </div>
+
+		   <!-- mini carte -->
+	
+				<iframe  id="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.9164293628082!2d-3.3669895851874765!3d47.7442761864516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48105e4e0418d49b%3A0xb6716a9016f5fee6!2s17+Rue+Amiral+Courbet%2C+56100+Lorient!5e0!3m2!1sfr!2sfr!4v1540306514419"  allowfullscreen></iframe>
+		
+	</div>
+			<!-- NOUS CONTACTER -->
+	
+	  <form action="envoyerform.php" id="form" method="post"> 
+			<h4 class="titreh4">Nous contacter</h4>
+		<fieldset id="coordonnees"><!--zones-->
+			
+			<legend>Vos coordonnées</legend>
+
+		        
+			
+			
+				<p>
+					<input type="radio" name="civilite" id="M" value="M" checked />
+					<label for="M" class="petit">M.</label>
+					<input class="labelblock" type="radio" name="civilite" id="Mme" value="Mme" />
+					<label for="Mme">Mme.</label>
+				</p>
+
+
+				<p>
+					<label for="nom"> Votre nom</label><input type="text" name="nom" id="nom" placeholder=" Votre nom" />
+				</p>
+				<p>
+					<label for="prenom"> Votre prénom</label><input type="text" name="prenom" id="prénom" placeholder=" Votre prénom" />
+				</p>
+				<p>
+					<label for="adresse"> Adresse</label><textarea rows="5" cols="20" name="adresse" id="adresse" placeholder></textarea>
+				</p>
+				<p> 
+					<label for="code postal">Code postal</label><input type="text" name="code postal" id="code postal" placeholder="00"><label for="ville">Ville</label><input type="text" name="ville" id="ville" placeholder=" Ville">
+				</p>
+		
+	
+
+			<!-- liste déroulante -->
+
+				<p><label for="pays">Votre pays</label>
+				<select name="pays" id="pays">
+					<option value="Danemark">Danemark</option>
+					<option value="France" selected>France</option>
+					<option value="Italie">Italie</option>
+				</select>
+				</p>
+				
+
+				
+		</fieldset>
+
+
+		<fieldset id="votremessage">
+			
+			<legend>Votre message</legend>
+
+			<!-- case a cocher: autant de choix que je veux-->
+				    
+			  <p> 	<label id="message" for="message">Votre message concerne</label>
+					<input type="checkbox" name="preference" id="vols" value="01234">
+					<label for="Vols" class="petit">Vols</label>
+					<input type="checkbox" name="preference" id="Séjours" value="56478" />
+					<label for="séjours" class="petit">Séjours</label>
+					<input type="checkbox" name="preference" id="Autres" value="tout" checked/>
+					<label for="Autres">Autres</label>
+			  </p>
+			  <p>
+			  	<label for="message">Votre message</label>
+			  	<textarea rows="5" cols="30" name="message" id="message" placeholder=" message"></textarea>
+			  </p>
+			   </fieldset>
+
+<!-- Boutons envoyer et annuler -->
+
+	    
+		       <p class="bouton"><input type="reset" value="envoyer"/>
+					<input type="reset" value="annuler" />
+		       </p>
+	  </form>
+	
+			
+	
+		<div class="reseaux">
+			<p>Nous suivre</p>
+			<a href="#"><img src="images-travel/facebook.jpg" alt="facebook" />
+			</a>
+                   <a href="#"><img src="images-travel/twitter.jpg" alt="twitter" />
+                   </a>
+			
+		</div>
+		
+</main>
+
+	</div><!-- page -->
+
+	<footer id="bas">
+		
+		<div id="menubas">
+			
+				<p>@2017-Tous droits réservés</p>
+				<p>Infos légales</p>
+			
+		</div>
+			
+			
+		</footer>
+
+		
+	
+</body>
+</html>

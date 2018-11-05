@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>POLYNESIE</title>
+	<meta name="viewport" content=" width= device-width, intitial-scale=1" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+
+
+</head>
+<body>
+	<div id="page">
+		<header>
+		<div id="menuhaut">
+			<ul>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Nous contacter</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a id="smobile" href="#">Site mobile</a></li>
+		        <li><a id="espace1" href="#">&gt;&gt; Espace client</a></li>
+			</ul>
+		</div>
+		
+		<div id="logo">
+			<a href="index.html"><img src="images-travel/logo-travel.jpg" alt=""></a>
+		</div>
+
+
+
+
+		<nav id="menuprincipal">
+			
+		<label for="menu-mobile" class="menu-mobile">Menu</label>
+		<input type="checkbox" id="menu-mobile"
+		role="button"> 
+
+
+			<ul>
+				<li><a href="index.html">ACCUEIL</a></li>
+<!--============= MENU DEROULANT =============-->	
+				<li>
+					<a href="polynesie.html" class="choix">POLYNESIE</a>
+				
+				<ul class="sousmenu">
+
+					<li><a href="australie.html">Australie</a></li>
+					<li><a href="usa.html">USA</a></li>
+					<li><a href="croisieres.html">Croisieres</a></li>
+
+					<li><a href="discount.html">Vols & Séjours discount</a></li>
+					<li><a href="sejoursdereve.html">Vols & Séjours de rêve</a></li>
+				</ul>
+				</li>
+<!--========== FIN MENU DEROULANT ======= -->
+				<li><a href="vols.html">VOLS</a></li>
+				<li><a href="sejours.html">SEJOURS</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		</header>
+		<main>
+
+
+	
+
+<!--=============   SLIDER NIVO SLIDER =============== -->
+
+
+        <div class="slider-wrapper theme-default">
+         <div id="slider" class="nivoSlider">
+		<img src="images-travel/polynesie/slider1.jpg" title="#htmlcaption"  alt="photo1">
+		<img src="images-travel/polynesie/slider2.jpg" title="#htmlcaption" alt="photo2">
+		<img src="images-travel/polynesie/slider3.jpg" title="#htmlcaption" >
+	    </div>
+
+	   <div id="htmlcaption" class="nivo-html-caption">
+                <p id="titreslide2" style="font-size:45px";>LA POLYNESIE</p>
+        </div>
+			
+<!-- SECTION ARTICLES-->
+		  <section id="promo">
+
+			<article class="articles">
+				<h2>Moorea</h2>
+				<img src="images-travel/polynesie/img1.jpg" alt="ponton">
+				<p>Moorea est une île du Pacifique Sud située dans l'archipel de la Société en Polynésie française. Elle est connue pour ses sommets volcaniques abrupts et ses plages de sable.</p>
+				<a href="#">Lire la suite</a>
+			</article>
+
+			<article class="articles">
+				<h2>Tahiti</h2>
+				<img src="images-travel/polynesie/img2.jpg" alt="ponton">
+				<p>Tahiti est la plus grande île de la Polynésie française, archipel du sud de l'océan Pacifique.  Avec ses plages de sable noir, ses lagons, ses chutes d'eau et ses 2 volcans éteints, l'île est une destination populaire …</p>
+				<a href="#">Lire la suite</a>
+			</article>
+
+			<article class="articles">
+				<h2>Papeete</h2>
+				<img src="images-travel/polynesie/img3.jpg" alt="ponton">
+				<p>Papeete, sur l'île de Tahiti, est la capitale de la Polynésie française, un groupe d'îles du Pacifique sud. À côté du port, la place animée de Vai'ete regorge de roulottes (ou chariots de nourriture) en soirée.</p>
+				<a href="#">Lire la suite</a>
+			</article>
+
+			<article class="articles">
+				<h2>Bora Bora</h2>
+				<img src="images-travel/polynesie/img4.jpg" alt="ponton">
+				<p>Bora-Bora est une petite île du Pacifique sud, située au nord-ouest de Tahiti, en Polynésie française. Entourée d'îlots de sable, appelés "motus", et d'une eau turquoise protégée par un récif corallien, l'île est un haut lieu de la plongée sous-marine.  </p>
+				<a href="#">Lire la suite</a>
+				
+			</article>
+
+		
+		</section>
+
+
+		</main>
+	<div class="reseaux">
+			<p>Nous suivre</p>
+			<a href="#"><img src="images-travel/facebook.jpg" alt="facebook" />
+			</a>
+                   <a href="#"><img src="images-travel/twitter.jpg" alt="twitter" />
+                   </a>
+			
+		</div>
+
+
+	</div>
+
+	<footer id="bas">
+		
+		<div id="menubas">
+			
+				<p>@2017-Tous droits réservés</p>
+				<p>Infos légales</p>
+			
+		</div>
+			
+			
+		</footer>
+		
+		<div id="menubas">
+			
+				<p>@2017-Tous droits réservés</p>
+				<p>Infos légales</p>
+			
+		</div>
+			
+			
+</footer>
+</div>
+
+<script src="scripts/jquery-1.9.0.min.js"></script>
+    <script src="scripts/jquery.nivo.slider.js"></script>
+    <script>
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+        	controlNav: false
+        })
+    });
+    </script>
+</body>
+</html>

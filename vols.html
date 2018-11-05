@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Vols Travel</title>
+	<meta name="viewport" content=" width= device-width, intitial-scale=1" />
+	<link rel="stylesheet" href="
+	style.css">
+	<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="page">
+		<header>
+		<div id="menuhaut">
+			<ul>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Nous contacter</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a id="smobile" href="#">Site mobile</a></li>
+		        <li><a id="espace1" href="#">&gt;&gt; Espace client</a></li>
+			</ul>
+		</div>
+		
+		<div id="logo">
+			<a href="accueil.html"><img src="images-travel/logo-travel.jpg" alt=""></a>
+		</div>
+
+		<nav id="menuprincipal">
+			
+		<label for="menu-mobile" class="menu-mobile">Menu</label>
+		<input type="checkbox" id="menu-mobile"
+		role="button"> 
+
+
+			<ul>
+				<li><a href="index.html">ACCUEIL</a></li>
+<!--============= MENU DEROULANT =============-->	
+				<li>
+					<a href="discount.html">VOLS & SEJOURS</a>
+				
+				<ul class="sousmenu">
+					<li><a href="discount.html" >VOLS DISCOUNT</a></li>
+					<li><a href="sejoursdereve.html">SEJOURS DE RÊVE</a></li>
+				</ul>
+				</li>
+<!--========== FIN MENU DEROULANT ======= -->
+				<li><a href="vols.html" class="choix">VOLS</a></li>
+				<li><a href="sejours.html">SEJOURS</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		</header>
+
+<!--  ================== VOLS ================= -->
+
+
+	<main id="formuvol">
+		<div id="banner">
+		<div class="sliderleft">
+        <div class="slidesleft">
+            <div class="slideleft">
+                <h5>Budapest <span class="col">95€</span></h5><img src="images/350/budapest.jpg" alt=""></div>
+            <div class="slideleft"><h5>Cracovie <span class="col">99€</span></h5><img src="images/350/cracovie.jpg" alt=""></div>
+            <div class="slideleft"><h5>Prague <span class="col">89€</span></h5><img src="images/350/prague.jpg" alt=""></div>
+            <div class="slideleft"><h5>Vienne <span class="col">109€</span></h5><img src="images/350/vienne.jpg" alt=""></div>
+            <div class="slideleft"><h5>Bucarest <span class="col">119€</span></h5><img src="images/350/bucarest.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="slidermid">
+        <div class="slidesmid">
+            <div class="slidemid">
+              <h5>Budapest <span class="col">95€</span></h5><img src="images/350/budapest.jpg" alt=""></div>
+            <div class="slidemid"><h5>Cracovie <span class="col">99€</span></h5><img src="images/350/cracovie.jpg" alt=""></div>
+            <div class="slidemid"><h5>Prague <span class="col">89€</span></h5><img src="images/350/prague.jpg" alt=""></div>
+            <div class="slidemid"><h5>Vienne <span class="col">109€</span></h5><img src="images/350/vienne.jpg" alt=""></div>
+            <div class="slidemid"><h5>Budapest <span class="col">119€</span></h5><img src="images/350/bucarest.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="sliderrig">
+        <div class="slidesrig">
+            <div class="sliderig">
+              <h5>Budapest <span class="col">95€</span></h5><img src="images/350/budapest.jpg" alt=""></div>
+            <div class="sliderig"><h5>Cracovie <span class="col">99€</span></h5><img src="images/350/cracovie.jpg" alt=""></div>
+            <div class="sliderig"><h5>Prague <span class="col">89€</span></h5><img src="images/350/prague.jpg" alt=""></div>
+            <div class="sliderig"><h5>Vienne <span class="col">109€</span></h5><img src="images/350/vienne.jpg" alt=""></div>
+            <div class="sliderig"><h5>Budapest <span class="col">119€</span></h5><img src="images/350/bucarest.jpg" alt=""></div>
+        </div>
+    </div>
+	</div>
+
+	
+	<!-- pour differencier de la page contact-->
+	<div id="carte2">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1kJim0y65aNIPrpW3QDat2A_IzFj3qq7d" allowfullscreen></iframe>
+		</div>					
+
+	<form id="formv" action="action_page.php" method="post"> 
+		<!--pour diffencier du form contact -->
+
+		<fieldset id="recherche"><!--zones-->
+			<legend class="reserv">Vols réservations</legend>
+
+	<!--class reserv pour differencier de la page contact-->		
+
+		<div class="colonne">
+           <!----reservation par date------->
+			<p><label for="depart">Date de départ</label>
+					<input type="date" name="depart" id="mail" placeholder="votre date de départ" /></p>
+
+			<p><label for="arrive">Date de retour</label>
+			<input type="date" name="retour" id="mail" placeholder="votre date de retour" /></p>
+        <!----fin reservation par date------->
+
+        <!-----Choix du trajet par radio button------------->
+			<p>
+					<input type="radio" name="trajet" id="aller/retour" value="aller/retour" checked /><label for"aller/retour" class="petit">Aller/Retour</label>
+					<input type="radio" name="trajet" id="Aller " value="Mme" /><label for"Aller simple">Aller Simple</label>
+				</p>
+			<!-----fin du Choix du trajet par radio button------------->
+
+			<!-----Debut du choix depart liste deroulante------>
+				<p><label  class="destination"  for="depart">Au Départ de</label>
+				<select name="pays" id="depart">
+					<option value="Bordeaux">Bordeaux</option>
+					<option value="Brest">Brest</option>
+					<option value="Rennes">Rennes</option>
+					<option value="Nantes">Nantes</option>
+					<option value="Paris" selected>Paris</option>
+					<option value="Lyon">Lyon</option>
+					<option value="Marseille">Marseille</option>
+					<option value="Toulouse">Toulouse</option>
+					<option value="Strasbourg">Strasbourg</option>
+					
+				</select>
+			<!-----fin du choix depart liste deroulante------>	
+<!--debut recherche destination utilisation liste deroulante avec sous groupes-------->
+
+				<label  class="destination" for="destination">Destination</label>
+				<!--<select name="destination" id="destination">-->
+					<select>
+						
+                       <optgroup class ="bleu" label="Australie" selected>
+                         <option value="Melbourne">Melbourne</option>
+                        <option value="Adélaide">Adélaide</option>
+                        <option value="Perth">Perth</option>
+                        <option value="Sydney">Sydney</option>
+                       </optgroup>
+                        <optgroup class="marron" label="Espagne">
+                         <option value="Madrid">Madrid</option>
+                        <option value="Barcelone">Barcelone</option>
+                        <option value="Seville">Seville</option>
+                       </optgroup>
+                        <optgroup class="marfonc" label="Mexique">
+                         <option value="Mexico">Mexico</option>
+                        <option value="Guadalajara">Guadalajara</option>
+                        <option value="Cancún">Cancún</option>
+                       </optgroup>
+                        <optgroup class="bleum" label="États-Unis">
+                         <option value="Atlanta">Atlanta</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Miami">Miami</option>
+                        <option value="Philadelphie">Philadelphie</option>
+                        <option value="Houston">Houston</option>
+                        <option value="Dallas">Dallas</option>
+                        <option value="New-York">New-York</option>
+                       </optgroup>
+                       <optgroup class="vert" label="Canada">
+                         <option value="Toronto">Toronto</option>
+                        <option value="Montréal">Montréal</option>
+                        <option value="Calgary">Calgary</option>
+                       </optgroup>
+                        <optgroup class="fush" label="Portugal">
+                         <option value="Lisbonne">Lisbonne</option>
+                        <option value="Porto">Porto</option>
+                        <option value="Setúbal">Setúbal</option>s
+                       </optgroup>
+                        <optgroup class="orange" label="Afrique">
+                         <option value="Lagos">Lagos</option>
+                        <option value="Le Caire">Le Caire</option>
+                        <option value="Kinshasa">Kinshasa</option>
+                        <option value="Mogadiscio">Mogadiscio</option>
+                        <option value="Johannesburg">Johannesburg</option>
+                        <option value="Alexandrie">Alexandrie</option>
+                        <option value="Le Cap">Le Cap</option>
+                        <option value="Yaounde">Yaounde</option>
+                        <option value="Nairobi">Nairobi</option>
+                       </optgroup>
+                       <optgroup class="vercl" label="Asie/Pacifique">
+                         <option value="Bangkok">Bangkok</option>
+                        <option value="Phuket">Phuket</option>
+                        <option value="Hanoi">Hanoi</option>
+                        <option value="Hong Kong">Hong kong</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="Papeete">Papeete</option>
+                        <option value="Shanghai">Shanghai</option>
+                        <option value="Pekin">Pekin</option>
+                        <option value="Denpasar">DenpasarS</option>
+                       </optgroup>
+                       <optgroup class="jaune" label="Amerique du sud">
+                         <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Lima">Lima</option>
+                        <option value="Sao Paulo">Sao Paulo</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Montevideo">Montevideo</option>
+                       </optgroup>
+                       <optgroup class="verm" label="Méditérranée">
+                        <option value="Tunis">Tunis</option>
+                        <option value="Djerba">Djerba</option>
+                        <option value="Marrakech">Marrakech</option>
+                        <option value="Casablanca">Casablanca</option>
+                        <option value="Istanbul">Istanbul</option>
+                        <option value="Dubai">Dubai</option>
+                       </optgroup>
+
+        <!--- fin des reservation destination ------------->               
+
+                   </select>
+				
+
+		</div>
+				<div class="colonne">
+				<p><label for="Adultes">Adulte(s)</label>
+				<select name="adulte" id="adulte">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select></p>
+				<p><label for="Adultes">Enfant(s)   (-12ans)</label>
+				<select name="enfant" id="enfant">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select><p/>
+
+				<p><label for="Adultes">Bébé(s)   (-2ans)</label>
+				<select name="bebe" id="bebe">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+
+				<p class="fin" > Classe :
+					<input type="radio" name="classe" id="eco" value="eco" checked /><label for"eco">Economique</label>
+					<input type="radio" name="classe" id="business" value="business" /><label for"business">Business</label>
+					<input class="lign" type="radio" name="classe" id="premiere" value="premiere" /><label for"premiere">Première</label>
+				</p>
+			</div>
+		
+			
+	
+		</fieldset>
+		
+		<p id="bouton"><input type="submit" value="Rechercher" />
+					<input id="bouton"type="reset" value="Annuler" />
+				</p>		
+
+				<!--changement de nom pour eviter contact-->
+		
+
+
+
+
+		
+</main>
+		<div class="reseaux">
+			<p>Nous suivre</p>
+			<a href="#"><img src="images-travel/facebook.jpg" alt="facebook" />
+			</a>
+                   <a href="#"><img src="images-travel/twitter.jpg" alt="twitter" />
+                   </a>
+			
+		</div>
+
+
+</div>
+<footer id="bas">
+		
+		<div id="menubas">
+			
+				<p>@2017-Tous droits réservés</p>
+				<p>Infos légales</p>
+			
+		</div>
+			
+			
+		</footer>
+
+	
+</body>
+</html>
